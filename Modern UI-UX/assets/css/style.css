@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: #c0a5ac;
+  display: flex;
+}
+
+#part1 {
+  height: 100%;
+  width: 26%;
+}
+
+#part2 {
+  height: 100%;
+  width: 67%;
+  background-color: blue;
+  background-image: url("../images/giant-8machine-head.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#overlay {
+  height: 100%;
+  width: 100%;
+  background-color: hsla(344, 10%, 54%, 0.275);
+}
+
+#part3 {
+  height: 100%;
+  width: 7%;
+}
+
+#text-div {
+  height: 300px;
+  width: 400px;
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+#text-div > h1 {
+  font-size: 90px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 900;
+  line-height: 78px;
+  color: #ffffff;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+#second-img {
+  height: 400px;
+  width: 300px;
+  background-image: url(../images/simon-lee-hand.jpg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translate(0, -50%);
+}
+
+#vertical-text {
+  position: absolute;
+  right: -50%;
+  top: 2%;
+  transform: rotate(90deg);
+  transform-origin: 0% 0%;
+}
+
+#vertical-text h1 {
+  font-size: 70px;
+  font-weight: 900;
+  font-family: "Ubuntu", sans-serif;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #ffffff;
+  letter-spacing: 15px;
+  color: transparent;
+  text-transform: uppercase;
+}
+
+#nav {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+  left: 6%;
+  top: 5%;
+}
+
+#nav #logo {
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  width: 70px;
+  height: 70px;
+}
+
+#nav #logo img {
+  width: 100%;
+}
+
+#nav h5 {
+  font-size: 20px;
+  color: #fff;
+  font-family: "Ubuntu", sans-serif;
+}

@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1200px;
+  display: flex;
+  gap: 100px;
+  padding: 42px 85px;
+}
+
+.left {
+  color: #000000;
+  padding: 20px;
+}
+
+span {
+  background-color: #cffbbe;
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: #000;
+  font-size: 14px;
+}
+
+.text {
+  margin: 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+p {
+  font-size: 20px;
+  width: 80%;
+}
+
+.btn {
+  display: flex;
+  gap: 15px;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #000;
+}
+
+.btn-1 {
+  background-color: #f4f4f4;
+  padding: 10px 20px;
+  border-radius: 7px;
+  /* transition: all 0.3s ease-in-out; */
+}
+
+/* .btn-1:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+} */
+
+.btn-1 a {
+  color: #000000;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn-1 i {
+  transition: all 0.3s ease;
+}
+
+.btn-1:hover i {
+  transform: translateX(-3px);
+}
+
+.btn-2 {
+  background-color: #282c2f;
+  padding: 10px 20px;
+  border-radius: 7px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-2:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.btn-2 a {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.right {
+  width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right img {
+  width: 100%;
+}
+
+/* medium screen */
+@media screen and (max-width: 768px) {
+  .container {
+    gap: 50px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .right {
+    width: 350px;
+  }
+}
+
+/* small screen */
+@media screen and (max-width: 576px) {
+  .container {
+    gap: 30px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .right img {
+    width: 250px;
+  }
+}
